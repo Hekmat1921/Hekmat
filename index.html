@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پخش‌کننده لوکس | Hekmat Music</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="neon-title">🎧 HEKMAT MUSIC</h1>
+        <div class="player-card">
+            <div class="cover" id="coverArt">🎵</div>
+            <h2 id="songTitle">هیچ آهنگی انتخاب نشده</h2>
+            <audio id="audioPlayer" controls></audio>
+            <div class="upload-area">
+                <input type="file" id="uploadSong" accept="audio/mpeg, audio/mp3">
+                <label for="uploadSong" class="upload-btn">📂 آپلود آهنگ جدید</label>
+            </div>
+            <div class="song-list" id="songList">
+                <h3>لیست پخش</h3>
+                <ul id="playlist"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
