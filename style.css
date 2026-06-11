@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    background: linear-gradient(145deg, #0a0f1e 0%, #0a0a14 100%);
+    font-family: 'Segoe UI', 'Poppins', system-ui, -apple-system;
+    color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    backdrop-filter: blur(12px);
+    background: rgba(20, 25, 45, 0.6);
+    border-radius: 48px;
+    padding: 24px;
+    box-shadow: 0 25px 40px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.05);
+}
+
+.neon-title {
+    text-align: center;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    background: linear-gradient(135deg, #ffd966, #ff66c0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 12px rgba(255,105,180,0.4);
+}
+
+.player-card {
+    background: rgba(12, 15, 28, 0.8);
+    border-radius: 36px;
+    padding: 24px;
+    text-align: center;
+}
+
+.cover {
+    font-size: 5rem;
+    background: #10131f;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 20px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.1);
+}
+
+audio {
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 40px;
+    background: #1e1f2c;
+}
+
+.upload-area {
+    margin: 20px 0;
+}
+
+.upload-btn {
+    display: inline-block;
+    background: linear-gradient(95deg, #2a2f46, #1b1e32);
+    padding: 12px 24px;
+    border-radius: 60px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+    border: 1px solid rgba(255,215,0,0.3);
+}
+.upload-btn:hover {
+    background: #3d4468;
+    transform: scale(0.98);
+}
+
+.song-list {
+    margin-top: 30px;
+    text-align: right;
+    background: #0d0f1a80;
+    border-radius: 28px;
+    padding: 12px;
+}
+
+#playlist {
+    list-style: none;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: auto;
+}
+#playlist li {
+    background: #181c2b;
+    margin: 8px 0;
+    padding: 10px 16px;
+    border-radius: 60px;
+    cursor: pointer;
+    transition: 0.1s;
+    display: flex;
+    justify-content: space-between;
+}
+#playlist li:hover {
+    background: #2a2f44;
+    transform: translateX(-5px);
+}
